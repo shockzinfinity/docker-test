@@ -1,0 +1,11 @@
+{
+  "name": "nodetest",
+  "version": "1.0.0",
+  "description": "docker test",
+  "main": "index.js",
+  "author": "shockz",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

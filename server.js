@@ -1,5 +1,5 @@
 var mongoose = require('mongoose')
-
+var uuid = require('uuid')
 var express = require('express')
 
 mongoose.connect('mongodb://root:1234@db:27017/?authSource=admin&readPreference=primary&appname=MongoDB%20Compass&ssl=false', {
@@ -18,9 +18,10 @@ db.on('error', function (err) {
 var Book = require('./models/book')
 
 var app = express()
+var id = uuid.v4()
 
 app.get('/', function (req, res) {
-    res.send('hi there')
+    res.send(`hi there... ID: ${id}`)
 })
 
 app.get('/newbook', function (req, res) {

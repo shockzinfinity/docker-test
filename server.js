@@ -2,7 +2,7 @@ var mongoose = require('mongoose')
 
 var express = require('express')
 
-mongoose.connect('mongodb://root:1234@api.shockz.io:27017/?authSource=admin&readPreference=primary&appname=MongoDB%20Compass&ssl=false', {
+mongoose.connect('mongodb://root:1234@db:27017/?authSource=admin&readPreference=primary&appname=MongoDB%20Compass&ssl=false', {
     useNewUrlParser: true
 })
 
